@@ -5,10 +5,6 @@ if [ $# != 2 ]; then
   exit
 fi
 
-#1. pandoc -s -V geometry:margin=1in -o newfile.tex file.md
-#2. xelatex newfile.tex (pdfLaTeX und LuaLaTeX gehen auch)
-#3. Bei jedem Vorkommen von \hyperlink{<ziel>}{<text>}  alle Großbuchstaben in <ziel> in Kleinbuchstaben umwandeln
-
 pandocConvert() {
   mkdir -p temp
   echo $1
